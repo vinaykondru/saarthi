@@ -15,7 +15,7 @@ function Albums() {
     useEffect(() => {
         getPost()
     },[])
-    const redirectToAlbums = (id) => {
+    const AlbumsPage = (id) => {
         window.location = `/photos/${id}`;
       };  
 
@@ -29,7 +29,7 @@ function Albums() {
                 <div className='albumbox1'> 
                 <p>{index +1}. </p>
                 <p>{item.title}</p>
-              <button  onClick={() => redirectToAlbums(item.id)}>
+              <button  onClick={() => AlbumsPage(item.id)}>
                 Click to get Photos
               </button>
               </div>
