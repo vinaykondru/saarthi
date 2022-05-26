@@ -5,6 +5,7 @@ import Menu from "../src/data.js";
 import Sample from './Sample';
 function App() {
   return (
+    
    <>
    <Sample data={Menu} />
    </>
