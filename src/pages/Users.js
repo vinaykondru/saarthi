@@ -13,7 +13,7 @@ function Users() {
     useEffect(() => {
         getPost()
     },[])
-    const redirectToAlbums = (id) => {
+    const UsersPage = (id) => {
         window.location = `/albums/${id}`;
       };  
 
@@ -27,7 +27,7 @@ function Users() {
                 <div className='box1'>  
                 <p>{item.id}.</p>
                 <p>name:-{item.name} 
-              <button className='button' onClick={() => redirectToAlbums(item.id)}>
+              <button className='button' onClick={() => UsersPage(item.id)}>
                 Click to get Albums
               </button>
                 </p>
